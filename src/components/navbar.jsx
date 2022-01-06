@@ -33,38 +33,34 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/flights"
+                to="/beehives"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Flights
+                Our Beehives
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/honey" className="nav-links" onClick={closeMobileMenu}>
+                Honey
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/hotels"
+                to="/pricing"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Hotels
+                Pricing
               </Link>
             </li>
             <li className="nav-item">
               <Link
-                to="/car-rentals"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Car Rentals
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/sign-in"
+                to="/register"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Sign in
+                Register
               </Link>
             </li>
           </ul>
