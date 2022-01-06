@@ -16,7 +16,7 @@ function Navbar() {
         <div className="navbar-container">
           {/*Logo*/}
           <Link to="/" className="navbar-logo">
-            BookAway <i class="fas fa-suitcase-rolling"></i>
+            BookBees <i class="fa-solid fa-bee"></i>
           </Link>
           {/*Menu Toggle*/}
           <div className="menu-toggle" onClick={handleClick}>
