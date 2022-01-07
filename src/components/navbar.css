@@ -35,6 +35,13 @@
   font-size: 1.8rem;
 }*/
 
+img {
+  max-width: 35px;
+  max-height: 35px;
+  margin-left: 160px;
+  margin-top: -38px;
+}
+
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -114,11 +121,17 @@
     border-radius: 0;
   }
 
-  .navbar-logo {
+  .navbar-logo,
+  img {
     position: absolute;
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
+  }
+
+  img {
+    margin-top: 8px;
+    margin-left: 180px;
   }
 
   .menu-icon {
