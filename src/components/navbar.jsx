@@ -32,15 +32,18 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           {/*Logo*/}
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            BookBees
+          <div className="logo-container">
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              BookBees
+            </Link>
             <img
               src={require("../logo.png")}
               alt="BookBees logo"
               className="logo"
               width="35px"
             />
-          </Link>
+          </div>
+
           {/*Menu Toggle*/}
           <div className="menu-icon" onClick={handleClick}>
             {/* If have an if statement where if the menu is clicked, then the icon is fas fa-times (x from FontAwesome
