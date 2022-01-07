@@ -1,25 +1,48 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "./navbar.css";
+import { Button } from "./Button.jsx";
 
 function Navbar() {
   {
     /*useState hook for menu toggle button */
   }
   const [click, setClick] = useState(false);
-  const handleClick = () => setClick(!click);
+  const [button, setButton] = useState(true);
 
+  const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener("resize", showButton);
 
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
           {/*Logo*/}
-          <Link to="/" className="navbar-logo">
-            BookBees <i class="fa-solid fa-bee"></i>
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            BookBees
+            <img
+              src={require("../logo.png")}
+              alt="BookBees logo"
+              className="logo"
+              width="35px"
+            />
           </Link>
           {/*Menu Toggle*/}
-          <div className="menu-toggle" onClick={handleClick}>
+          <div className="menu-icon" onClick={handleClick}>
             {/* If have an if statement where if the menu is clicked, then the icon is fas fa-times (x from FontAwesome
                 ) and otherwise fas fa-bars (hamburger from FontAwesome)*/}
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -41,11 +64,6 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/honey" className="nav-links" onClick={closeMobileMenu}>
-                Honey
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link
                 to="/pricing"
                 className="nav-links"
@@ -64,6 +82,8 @@ function Navbar() {
               </Link>
             </li>
           </ul>
+
+          {button && <Button buttonStyle="btn--outline">Register</Button>}
         </div>
       </nav>
     </>
