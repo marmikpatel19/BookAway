@@ -5,6 +5,7 @@
 
 h1 {
   text-align: center;
+  color: rgb(255, 198, 42);
 }
 
 .cards__container {
@@ -75,7 +76,7 @@ h1 {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  /*left: 0;*/
   display: block;
   width: 100%;
   max-width: 100%;
@@ -85,8 +86,15 @@ h1 {
   transition: all 0.2s linear;
 }
 
+/*
 .cards__item__img:hover {
   transform: scale(1.1);
+}*/
+
+.cards__item__link:hover {
+  background-color: rgb(255, 198, 42);
+  transform: scale(1.05);
+  transition: transform ease 250ms;
 }
 
 .cards__item__info {
@@ -97,11 +105,17 @@ h1 {
   color: #252e48;
   font-size: 18px;
   line-height: 24px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1200px) {
   .content__blog__container {
     width: 84%;
+  }
+
+  .cards__item__text {
+    margin-right: 125px;
+    margin-left: 125px;
   }
 }
 
@@ -109,10 +123,29 @@ h1 {
   .cards__items {
     display: flex;
   }
+  .cards__item__text {
+    margin-right: 75px;
+    margin-left: 75px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+  .cards__item__text {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .cards__item__img {
+    margin-left: -90px;
+    margin-top: -120px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .cards__item__img {
+    margin-left: -73px;
   }
 }

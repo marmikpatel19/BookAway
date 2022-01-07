@@ -5,7 +5,7 @@ import "./Cards.css";
 function Cards() {
   return (
     <div className="cards">
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Try some of our 100% pure unpasteurized honey</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
@@ -18,28 +18,28 @@ function Cards() {
               path="/pricing"
             />
             <CardItem
-              src="images/marsh-honey.jpg"
-              text="Marsh Honey"
+              src="images/linden-honey.jpg"
+              text="Linden Honey"
               label="In stock"
               path="/pricing"
             />
           </ul>
           <ul className="cards__items">
             <CardItem
-              src="images/raspberryblossom-honey.jpg"
-              text="Raspberry Blossom Honey"
-              label="Sold out"
-              path="/pricing"
-            />
-            <CardItem
-              src="images/linden-honey.jpg"
-              text="Liden Honey"
+              src="images/marsh-honey.jpg"
+              text="Marsh Honey"
               label="In stock"
               path="/pricing"
             />
             <CardItem
               src="images/blueberryblossom-honey.jpg"
               text="Blueberry Blossom Honey"
+              label="Sold out"
+              path="/pricing"
+            />
+            <CardItem
+              src="images/raspberryblossom-honey.jpg"
+              text="Raspberry Blossom Honey"
               label="Sold out"
               path="/pricing"
             />
