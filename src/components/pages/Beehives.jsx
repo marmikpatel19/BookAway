@@ -1,5 +1,6 @@
 import React from "react";
 import "../../App.css";
+import Footer from "../Footer";
 import Navbar from "../navbar";
 
 function Products() {
@@ -7,6 +8,7 @@ function Products() {
     <>
       <Navbar />
       <h1 className="beehives">BEEHIVES</h1>;
+      <Footer />
     </>
   );
 }
