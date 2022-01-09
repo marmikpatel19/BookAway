@@ -3,6 +3,7 @@ import "../../App.css";
 import HeroSection from "../HeroSection";
 import Navbar from "../navbar";
 import Cards from "../Cards";
+import Footer from "../Footer";
 
 function Hemo() {
   return (
@@ -10,6 +11,7 @@ function Hemo() {
       <Navbar />
       <HeroSection />
       <Cards />
+      <Footer />
     </>
   );
 }
