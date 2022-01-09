@@ -8,11 +8,21 @@ function Navbar() {
     /*useState hook for menu toggle button */
   }
   const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
+  {
+    /*useState hook for Register button*/
+  }
   const [button, setButton] = useState(true);
 
-  const handleClick = () => setClick(!click);
+  {
+    /* Used below to close the menu in mobile view when user clicks an item*/
+  }
   const closeMobileMenu = () => setClick(false);
 
+  {
+    /*Register button*/
+  }
   const showButton = () => {
     if (window.innerWidth <= 960) {
       setButton(false);
@@ -44,41 +54,42 @@ function Navbar() {
             />
           </div>
 
-          {/*Menu Toggle*/}
-          <div className="menu-icon" onClick={handleClick}>
-            {/* If have an if statement where if the menu is clicked, then the icon is fas fa-times (x from FontAwesome
-                ) and otherwise fas fa-bars (hamburger from FontAwesome)*/}
+          {/*Navbar Toggle*/}
+          <div className="navbar-toggle" onClick={handleClick}>
+            {/* Ternary operatory where a click on the toggle corresponds to the "x" or "hamburger" of the menu. The outout of
+            the ternary operator is assigned to the className so that the corresponding logo can appear (FontAwesome format)*/}
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          {/*When the menu is clicked, it become "active". if it is clicked again (the else in the statement), then it comes closed*/}
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+
+          {/*Ternary operator for the status of the menu*/}
+          <ul className={click ? "navbar-menu active" : "navbar-menu"}>
+            <li className="navbar-item">
+              <Link to="/" className="navbar-links" onClick={closeMobileMenu}>
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="navbar-item">
               <Link
                 to="/beehives"
-                className="nav-links"
+                className="navbar-links"
                 onClick={closeMobileMenu}
               >
                 Our Beehives
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="navbar-item">
               <Link
                 to="/pricing"
-                className="nav-links"
+                className="navbar-links"
                 onClick={closeMobileMenu}
               >
                 Pricing
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="navbar-item">
               <Link
                 to="/register"
-                className="nav-links-mobile"
+                className="navbar-links-mobile"
                 onClick={closeMobileMenu}
               >
                 Register
