@@ -89,7 +89,7 @@ function Navbar() {
             <li className="navbar-item">
               <Link
                 to="/register"
-                className="navbar-links-mobile"
+                className="navbar-register-mobile"
                 onClick={closeMobileMenu}
               >
                 Register
