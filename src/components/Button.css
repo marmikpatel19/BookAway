@@ -5,14 +5,12 @@
 .btn {
   padding: 8px 20px;
   border-radius: 2px;
-  outline: none;
-  border: none;
   cursor: pointer;
 }
 
 .btn--primary {
   background-color: var(--primary);
-  color: #242424;
+  color: #1d1d1d;
   border: 1px solid var(--primary);
 }
 

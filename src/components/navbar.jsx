@@ -97,7 +97,11 @@ function Navbar() {
             </li>
           </ul>
 
-          {button && <Button buttonStyle="btn--outline">Register</Button>}
+          {button && (
+            <Button buttonStyle="btn--outline" pageisPricing={false}>
+              Register
+            </Button>
+          )}
         </div>
       </nav>
     </>
