@@ -5,7 +5,7 @@ import Navbar from "../navbar";
 import Cards from "../Cards";
 import Footer from "../Footer";
 
-function Hemo() {
+function Home() {
   return (
     <>
       <Navbar />
@@ -16,4 +16,4 @@ function Hemo() {
   );
 }
 
-export default Hemo;
+export default Home;

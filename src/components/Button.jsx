@@ -11,18 +11,19 @@ export const Button = ({
   onClick,
   buttonStyle,
   buttonSize,
+  pageisPricing,
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
   {
-    /*if a button does not have a style, then by default it gets the btn-primary style */
+    /*If a button does not have a style, then by default it gets the btn-primary style */
   }
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to="/register" className="btn-mobile">
-      {/*the children are what get displayed--we can make the children whatever we want */}
+    <Link to={pageisPricing ? "/pricing" : "/register"} className="btn-mobile">
+      {/*The children are what gets displayed--we can make the children whatever we want */}
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}
         onClick={onClick}

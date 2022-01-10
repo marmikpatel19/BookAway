@@ -6,23 +6,24 @@ import "./HeroSection.css";
 function HeroSection() {
   return (
     <div className="hero-container">
-      {/*<img src={require("../../public/images/beekeeper.jpg")} /> */}
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <h1>BUZZ WITH OUR BEES</h1>
+      <p>Join a private bee tour!</p>
       <div className="hero-btns">
         <Button
           className="btns"
           buttonStyle="btn--outline"
           buttonSize="btn-large"
+          pageisPricing={true}
         >
-          GET STARTED
+          Pricing
         </Button>
         <Button
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn-large"
+          pageisPricing={false}
         >
-          WATCH TRAILER <i className="far fa-play-circle" />
+          Register
         </Button>
       </div>
     </div>
