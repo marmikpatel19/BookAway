@@ -22,12 +22,14 @@ function Products() {
                 text="Lincoln, Nebraska. Mon-Fri, 9am-4pm."
                 label="Open Now"
                 path="/register"
+                alt="A photo of the Lincoln beehive"
               />
               <Card
                 src="images/calgary.jpg"
                 text="Calgary, Alberta. Mon-Fri, 10am-4pm."
                 label="Closed for the season"
                 path="/register"
+                alt="A photo of the Calgary beehive"
               />
             </ul>
             <ul className="cards-items">
@@ -36,12 +38,14 @@ function Products() {
                 text="Burnaby, British Columbia. Tues-Fri, 9am-330pm"
                 label="Closed for the season"
                 path="/register"
+                alt="A photo of the Burnaby beehive"
               />
               <Card
                 src="images/ottawa.jpg"
                 text="Ottawa, Ontario. Mon-Fri, 10am-3pm."
                 label="Closed for the season"
                 path="/register"
+                alt="A photo of the Ottawa beehive"
               />
             </ul>
           </div>
