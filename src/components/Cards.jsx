@@ -15,12 +15,14 @@ function Cards() {
               text="Golden Honey"
               label="In stock"
               path="/pricing"
+              alt="Image of Honey"
             />
             <Card
               src="images/linden-honey.jpg"
               text="Linden Honey"
               label="In stock"
               path="/pricing"
+              alt="Image of Honey"
             />
           </ul>
           <ul className="cards-items">
@@ -29,18 +31,21 @@ function Cards() {
               text="Marsh Honey"
               label="In stock"
               path="/pricing"
+              alt="Image of Honey"
             />
             <Card
               src="images/blueberryblossom-honey.jpg"
               text="Blueberry Blossom Honey"
               label="Sold out"
               path="/pricing"
+              alt="Image of Honey"
             />
             <Card
               src="images/raspberryblossom-honey.jpg"
               text="Raspberry Blossom Honey"
               label="Sold out"
               path="/pricing"
+              alt="Image of Honey"
             />
           </ul>
         </div>
