@@ -1,0 +1,28 @@
+.pricing-heading {
+  font-size: 50px;
+  margin: 40px 0px 40px 0px;
+  color: rgb(254, 144, 4);
+}
+
+.table {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  outline: solid;
+  outline-width: 3px;
+  outline-color: rgb(255, 213, 96);
+  border-radius: 10px;
+}
+
+#honey-discription {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #1d1d1d;
+}
+
+#beehives-link {
+  color: rgb(255, 213, 96);
+}
+
+/*add media queries*/
