@@ -11,7 +11,7 @@ function Register() {
       <Navbar />
       <h1 className="register-heading">REGISTER</h1>
       <SignUp />
-      <Footer className="footer" />
+      <Footer />
     </>
   );
 }
