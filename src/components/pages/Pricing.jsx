@@ -49,50 +49,53 @@ function Pricing() {
   return (
     <>
       <Navbar />
+
       <h1 className="pricing-heading">PRICING</h1>
       <h1>Try some of our delicious honey!</h1>
 
       {/*Table 1*/}
-      <Table
-        sx={{ minWidth: 500, maxWidth: 900 }}
-        size="medium"
-        aria-label="a dense table"
-        className="table"
-      >
-        <TableHead>
-          <TableRow>
-            <TableCell className="header-cell">
-              <b>Golden Honey</b>
-            </TableCell>
-            <TableCell>
-              <b>Linden Honey</b>
-            </TableCell>
-            <TableCell>
-              <b>Marsh Honey</b>
-            </TableCell>
-            <TableCell>
-              <b>Blueberry Blossom Honey</b>
-            </TableCell>
-            <TableCell>
-              <b>Raspberry Blossom Honey</b>
-            </TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
-              <TableCell>{row.golden}</TableCell>
-              <TableCell>{row.linden}</TableCell>
-              <TableCell>{row.marsh}</TableCell>
-              <TableCell>{row.bluberryblossom}</TableCell>
-              <TableCell>{row.raspberryblossom}</TableCell>
+      <div className="table-container">
+        <Table
+          sx={{ minWidth: 500, maxWidth: 900 }}
+          size="medium"
+          aria-label="a dense table"
+          className="table"
+        >
+          <TableHead>
+            <TableRow>
+              <TableCell className="header-cell">
+                <b>Golden Honey</b>
+              </TableCell>
+              <TableCell>
+                <b>Linden Honey</b>
+              </TableCell>
+              <TableCell>
+                <b>Marsh Honey</b>
+              </TableCell>
+              <TableCell>
+                <b>Blueberry Blossom Honey</b>
+              </TableCell>
+              <TableCell>
+                <b>Raspberry Blossom Honey</b>
+              </TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell>{row.golden}</TableCell>
+                <TableCell>{row.linden}</TableCell>
+                <TableCell>{row.marsh}</TableCell>
+                <TableCell>{row.bluberryblossom}</TableCell>
+                <TableCell>{row.raspberryblossom}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
       <h3 id="honey-discription">
         Our 100% pure honey can be purchased at any of our{" "}
         <Link to="/beehives" id="beehives-link">
@@ -102,47 +105,51 @@ function Pricing() {
       </h3>
 
       <h1>Take a tour at one of our hives!</h1>
+
       {/*Table 2*/}
-      <Table
-        sx={{ minWidth: 500, maxWidth: 900 }}
-        size="medium"
-        aria-label="a dense table"
-        className="table"
-      >
-        <TableHead>
-          <TableRow>
-            <TableCell className="header-cell">
-              <b>Tour</b>
-            </TableCell>
-            <TableCell>
-              <b>Lincoln</b>
-            </TableCell>
-            <TableCell>
-              <b>Calgary</b>
-            </TableCell>
-            <TableCell>
-              <b>Burnaby</b>
-            </TableCell>
-            <TableCell>
-              <b>Ottawa</b>
-            </TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows2.map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
-              <TableCell>{row.tour}</TableCell>
-              <TableCell>{row.lincoln}</TableCell>
-              <TableCell>{row.calgary}</TableCell>
-              <TableCell>{row.burnaby}</TableCell>
-              <TableCell>{row.ottawa}</TableCell>
+
+      <div className="table-container">
+        <Table
+          sx={{ minWidth: 500, maxWidth: 900 }}
+          size="medium"
+          aria-label="a dense table"
+          className="table"
+        >
+          <TableHead>
+            <TableRow>
+              <TableCell className="header-cell">
+                <b>Tour</b>
+              </TableCell>
+              <TableCell>
+                <b>Lincoln</b>
+              </TableCell>
+              <TableCell>
+                <b>Calgary</b>
+              </TableCell>
+              <TableCell>
+                <b>Burnaby</b>
+              </TableCell>
+              <TableCell>
+                <b>Ottawa</b>
+              </TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
+          </TableHead>
+          <TableBody>
+            {rows2.map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+              >
+                <TableCell>{row.tour}</TableCell>
+                <TableCell>{row.lincoln}</TableCell>
+                <TableCell>{row.calgary}</TableCell>
+                <TableCell>{row.burnaby}</TableCell>
+                <TableCell>{row.ottawa}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </div>
 
       <div className="tour-discriptions">
         <h3 className="tour-discription">

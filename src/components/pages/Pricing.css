@@ -47,4 +47,9 @@ h3 {
   margin-bottom: 30px;
 }
 
-/*add media queries*/
+@media (max-width: 1000px) {
+  .table-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
