@@ -14,7 +14,7 @@
 </p>
 
 <P align="center" style="text-align: center;">
-    I developed this interactive, responsive website using <a href="https://reactjs.org/">React</a> + HTML/CSS and leveraged the <a href="https://github.com/remix-run/react-router">React Router</a> library. <b>Check out the <a href="">Website</a>!</b>
+    I developed this interactive, responsive website using <a href="https://reactjs.org/">React</a> + HTML/CSS and leveraged the <a href="https://github.com/remix-run/react-router">React Router</a> and <a href="https://github.com/mui-org/material-ui">MUI</a> libraries. <b>Check out the <a href="">Website</a>!</b>
 </p>
 
 <h1 align="center" style="text-align: center;  margin-top: 30px"><b>Preview</b></h1>
@@ -43,6 +43,17 @@
 <img
     src="https://user-images.githubusercontent.com/90867690/148882793-c4185ff0-3324-4e5d-aab9-edf0e9792603.png"
     alt="BookBees Beehives page screenshot"
+    width="1000px"
+    style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;"
+/>
+<img
+    src="https://user-images.githubusercontent.com/90867690/149272397-6cbc7779-456c-421e-a805-795f2b1a17b8.png"
+    alt="BookBees Pricing page screenshot"
     width="1000px"
     style="
         display: block;
