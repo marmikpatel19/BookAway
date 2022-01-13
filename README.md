@@ -30,7 +30,7 @@
         margin-bottom: 20px;"
 />
 <img
-    src="https://user-images.githubusercontent.com/90867690/148706316-b21dc3d4-d9e4-4d88-a5f9-91ac7231f6bb.png"
+    src="https://user-images.githubusercontent.com/90867690/149273256-1430dd12-dbc6-4f97-8a06-4da70ff13210.png"
     alt="BookBees honey section screenshot"
     width="1000px"
     style="
@@ -41,7 +41,7 @@
         margin-bottom: 20px;"
 />
 <img
-    src="https://user-images.githubusercontent.com/90867690/148882793-c4185ff0-3324-4e5d-aab9-edf0e9792603.png"
+    src="https://user-images.githubusercontent.com/90867690/149273597-5e102444-5b20-436e-a2d5-37a334e88b03.png"
     alt="BookBees Beehives page screenshot"
     width="1000px"
     style="
@@ -54,6 +54,17 @@
 <img
     src="https://user-images.githubusercontent.com/90867690/149272397-6cbc7779-456c-421e-a805-795f2b1a17b8.png"
     alt="BookBees Pricing page screenshot"
+    width="1000px"
+    style="
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 20px;"
+/>
+<img
+    src="https://user-images.githubusercontent.com/90867690/149379526-62ae915e-536a-4368-913e-d74f63231355.png"
+    alt="BookBees Register page screenshot"
     width="1000px"
     style="
         display: block;
