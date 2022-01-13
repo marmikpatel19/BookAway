@@ -10,6 +10,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import MenuItem from "@mui/material/MenuItem";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const theme = createTheme();
@@ -24,9 +25,83 @@ export default function SignUp() {
     });
   };
 
+  /*Tour Types */
+  const types = [
+    {
+      value: "Private Bee Tour",
+      label: "Private Bee Tour",
+    },
+    {
+      value: "School Group Tour",
+      label: "School Group Tour",
+    },
+  ];
+
+  const [type, setType] = React.useState("Private Bee Tour");
+
+  const handleChange = (event) => {
+    setType(event.target.value);
+  };
+
+  /*Tour Locations */
+  const locations = [
+    {
+      value: "Lincoln",
+      label: "Lincoln",
+    },
+    {
+      value: "Calgary	",
+      label: "Calgary	",
+    },
+    {
+      value: "Burnaby	",
+      label: "Burnaby	",
+    },
+    {
+      value: "Ottawa	",
+      label: "Ottawa	",
+    },
+  ];
+
+  const [location, setLocation] = React.useState("Lincoln");
+  const handleChange2 = (event) => {
+    setLocation(event.target.value);
+  };
+
+  /*Tour Times */
+  const times = [
+    {
+      value: "Morning",
+      label: "Morning",
+    },
+    {
+      value: "Noon	",
+      label: "Noon	",
+    },
+    {
+      value: "Afternoon	",
+      label: "Afternoon	",
+    },
+  ];
+
+  const [time, setTime] = React.useState("Morning");
+
+  const handleChange3 = (event) => {
+    setTime(event.target.value);
+  };
+
+  const containerStyle = {
+    "margin-bottom": "40px",
+    "margin-top": "-30px",
+  };
+
+  const buttonStyle = {
+    "background-color": "rgb(254, 144, 4)",
+  };
+
   return (
     <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
+      <Container component="main" maxWidth="xs" style={containerStyle}>
         <CssBaseline />
         <Box
           sx={{
@@ -77,15 +152,71 @@ export default function SignUp() {
                   autoComplete="email"
                 />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={12} sm={6}>
                 <TextField
                   required
                   fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
+                  select
+                  name="tour-type"
+                  label="Tour Type"
+                  type="radio"
+                  id="tour-type"
+                  value={type}
+                  onChange={handleChange}
+                >
+                  {types.map((option) => (
+                    <MenuItem key={option.value} value={option.value}>
+                      {option.label}
+                    </MenuItem>
+                  ))}
+                </TextField>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  select
+                  name="tour-location"
+                  label="Tour Location"
+                  type="radio"
+                  id="tour-location"
+                  value={location}
+                  onChange={handleChange2}
+                >
+                  {locations.map((option) => (
+                    <MenuItem key={option.value} value={option.value}>
+                      {option.label}
+                    </MenuItem>
+                  ))}
+                </TextField>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  select
+                  name="tour-time"
+                  label="Tour Time"
+                  type="radio"
+                  id="tour-time"
+                  value={time}
+                  onChange={handleChange3}
+                >
+                  {times.map((option) => (
+                    <MenuItem key={option.value} value={option.value}>
+                      {option.label}
+                    </MenuItem>
+                  ))}
+                </TextField>
+              </Grid>
+              <Grid item xs={12} sm={6}>
+                <TextField
+                  required
+                  fullWidth
+                  id="attendees"
+                  label="Number of Attendees"
+                  name="attendees"
+                  autoComplete="num-attendees"
                 />
               </Grid>
               <Grid item xs={12}>
@@ -102,16 +233,10 @@ export default function SignUp() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              style={buttonStyle}
             >
               Sign Up
             </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="#" variant="body2">
-                  Already have an account? Sign in
-                </Link>
-              </Grid>
-            </Grid>
           </Box>
         </Box>
       </Container>
