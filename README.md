@@ -10,11 +10,11 @@
 </div>
 
 <p align="center" style="text-align: center;">
-    <a href="">BookBees</a> is a beekeeping business that allows customers to visit various hives for bee tours and purchase locally-sourced honey. 🍯
+    <a href="https://sad-lamport-370283.netlify.app/">BookBees</a> is a beekeeping business that allows customers to visit various hives for bee tours and purchase locally-sourced honey. 🍯
 </p>
 
 <P align="center" style="text-align: center;">
-    I developed this interactive, responsive website using <a href="https://reactjs.org/">React</a> + HTML/CSS and leveraged the <a href="https://github.com/remix-run/react-router">React Router</a> and <a href="https://github.com/mui-org/material-ui">MUI</a> libraries. <b>Check out the <a href="">Website</a>!</b>
+    I developed this interactive, responsive website using <a href="https://reactjs.org/">React</a> + HTML/CSS and leveraged the <a href="https://github.com/remix-run/react-router">React Router</a> and <a href="https://github.com/mui-org/material-ui">MUI</a> libraries. <b>Check out the <a href="https://sad-lamport-370283.netlify.app/">Website</a>!</b>
 </p>
 
 <h1 align="center" style="text-align: center;  margin-top: 30px"><b>Preview</b></h1>
@@ -78,5 +78,5 @@
 
 <p align="center" style="text-align: center;">
     I got the inspiration, structure, and some styling from <a href="https://github.com/briancodex">Brian Design</a>'s <a
-    href="https://www.youtube.com/watch?v=I2UBjN5ER4s">React Website Tutorial</a>. I refactored and developed the rest of the BookBees website. Photos from <a href="https://www.pexels.com/">Pexels</a>. 
+    href="https://www.youtube.com/watch?v=I2UBjN5ER4s">React Website Tutorial</a>. I refactored and developed the rest of the <a href="https://sad-lamport-370283.netlify.app/">BookBees</a> website. Photos from <a href="https://www.pexels.com/">Pexels</a>. 
 </p>
