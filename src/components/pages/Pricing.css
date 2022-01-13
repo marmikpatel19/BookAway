@@ -14,15 +14,37 @@
   border-radius: 10px;
 }
 
-#honey-discription {
+h3 {
   text-align: center;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   color: #1d1d1d;
+  font-weight: 100;
+}
+
+#honey-discription {
+  margin-bottom: 60px;
+  margin-top: 20px;
 }
 
 #beehives-link {
   color: rgb(255, 213, 96);
+}
+
+.tour-discriptions {
+  margin: auto;
+  margin-top: 30px;
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tour-discription {
+  margin-bottom: 30px;
 }
 
 /*add media queries*/
